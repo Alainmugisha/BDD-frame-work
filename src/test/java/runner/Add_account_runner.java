@@ -1,5 +1,6 @@
 package runner;
 
+
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -9,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features="classpath:features",
 glue="",
-tags ="@loginPage,@addAccount",
+tags ="@addAccount",
 monochrome=true,
 dryRun=false,
 plugin= {
@@ -19,8 +20,7 @@ plugin= {
 }
 )
 
-
-public class Login_runner {
-	
+public class Add_account_runner {
 
 }
+

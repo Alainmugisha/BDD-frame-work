@@ -1,11 +1,14 @@
-Feature: validate Techfios login functionality
+@loginPage 
+Feature: validate Techfios login functionality 
 
-Background:
-
-	Given User is on the techfios login page 
+Background: 
+	Given User is opening browser 
 	
-Scenario: user should be able to login with the valid credentials  
+Scenario: 1 user should be able to login with the valid credentials 
+	When User is on the techfios login page 
 	When user enters username as "demo@techfios.com" 
-	When user enters password as "abc123"  
-	And user click signin button   
-	Then user will land on dashboard page  
+	When user enters password as "abc123" 
+	And user click signin button 
+	Then user will land on dashboard page 
+	
+	

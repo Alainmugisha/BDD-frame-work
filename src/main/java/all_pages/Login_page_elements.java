@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.Assert;
 
 public class Login_page_elements {
 
@@ -19,6 +20,13 @@ public class Login_page_elements {
 	WebElement Password;
 	@FindBy(how = How.XPATH, using = "//button[@name='login']")
 	WebElement SignIn;
+	
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"page-wrapper\"]/div[2]/div/h2")
+	WebElement Dashboard_page;
+	
+	
+	
 
 
 	// Interactive method
@@ -28,15 +36,18 @@ public class Login_page_elements {
 	public void enterPassword(String password) {
 	Password.sendKeys(password);
 	}
-	public void enterCredentials(String userName, String password) {
-	User_Name.sendKeys(userName);
-	Password.sendKeys(password);
-	}
+	
 	public void clickOnSignInButton() {
 	SignIn.click();
 	}
-	public String getPageTitle() {
-	return driver.getTitle();
+	public void Verify_dashboard() {
+		
+		String actualTitle = driver.getTitle();
+		
+		String expectedTitle =  Dashboard_page.getText();
+		
+		Assert.assertEquals(actualTitle, expectedTitle);
+		
 	}
 
 }

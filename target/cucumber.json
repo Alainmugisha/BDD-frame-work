@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 6162679500,
+              "duration": 4964543600,
               "status": "passed"
             },
             "line": 5,
-            "name": "User is on the techfios login page",
+            "name": "User will open browser",
             "match": {
-              "location": "LoginSteps.user_is_on_the_techfios_login_page()"
+              "location": "New_account_steps.user_will_open_browser()"
             },
             "keyword": "Given "
           }
@@ -25,79 +25,271 @@
       },
       {
         "line": 7,
-        "name": "user should be able to login with the valid credentials",
-        "description": "",
-        "id": "validate-techfios-login-functionality;user-should-be-able-to-login-with-the-valid-credentials",
+        "name": "1 user will be able to login with the valid credentials",
+        "description": "  //When User land on the techfios login page",
+        "id": "validate-techfios-add-account-functionality;1-user-will-be-able-to-login-with-the-valid-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 289152100,
+              "duration": 240050800,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user enters username as \"demo@techfios.com\"",
+            "line": 9,
+            "name": "user enter username as \"demo@techfios.com\"",
             "match": {
               "arguments": [
                 {
                   "val": "demo@techfios.com",
-                  "offset": 25
+                  "offset": 24
                 }
               ],
-              "location": "LoginSteps.user_enters_username_as(String)"
+              "location": "New_account_steps.user_enter_username_as(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 105800100,
+              "duration": 117184900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enters password as \"abc123\"",
+            "line": 10,
+            "name": "user enter password as \"abc123\"",
             "match": {
               "arguments": [
                 {
                   "val": "abc123",
-                  "offset": 25
+                  "offset": 24
                 }
               ],
-              "location": "LoginSteps.user_enters_password_as(String)"
+              "location": "New_account_steps.user_enter_password_as(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1780869600,
+              "duration": 1761836400,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user click signin button",
+            "line": 11,
+            "name": "users click signin button",
             "match": {
-              "location": "LoginSteps.user_click_signin_button()"
+              "location": "New_account_steps.users_click_signin_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 46900,
+              "duration": 11804900,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user will land on dashboard page",
+            "line": 12,
+            "name": "user will lands on dashboard page",
             "match": {
-              "location": "LoginSteps.user_will_land_on_dashboard_page()"
+              "location": "New_account_steps.user_will_lands_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 97575100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user will be able to click on bank and cash button",
+            "match": {
+              "location": "New_account_steps.user_will_be_able_to_click_on_bank_and_cash_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1586587800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user will be able to click on add account button",
+            "match": {
+              "location": "New_account_steps.user_will_be_able_to_click_on_add_account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 139246600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user will enter account title as\"saving_acc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "saving_acc",
+                  "offset": 33
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_account_title_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 158155800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will enter description as \"no more than 3 withdraw a month\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "no more than 3 withdraw a month",
+                  "offset": 32
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_description_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126101500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user will enter initial balance as \"200USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200USD",
+                  "offset": 36
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_initial_balance_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131346200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user will enter account number as \"123_SAV_4556\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123_SAV_4556",
+                  "offset": 35
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_account_number_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146233100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user will enter contact person as \"Techfios_inc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Techfios_inc",
+                  "offset": 35
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_contact_person_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125124700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user will enter phone as \"123_abc_4556\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123_abc_4556",
+                  "offset": 26
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_phone_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147012400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user will enter internet banking as \"www.techfios_saving_inc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "www.techfios_saving_inc",
+                  "offset": 37
+                }
+              ],
+              "location": "New_account_steps.user_will_enter_internet_banking_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1065415600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user will click on submit button",
+            "match": {
+              "location": "New_account_steps.user_will_click_on_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2294501900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "takeScreenshotAtEndOfTest(WebDriver driver)",
+            "match": {
+              "location": "New_account_steps.takescreenshotatendoftest_WebDriver_driver()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5883139700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user will close the browser",
+            "match": {
+              "location": "New_account_steps.user_will_close_the_browser()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "validate Techfios login functionality",
+    "name": "validate Techfios Add account functionality",
     "description": "",
-    "id": "validate-techfios-login-functionality",
+    "id": "validate-techfios-add-account-functionality",
     "keyword": "Feature",
-    "uri": "C:/Users/Alain Mickey/Desktop/All Java project____eclipse/maven projects/BDD/src/test/java/features/TF_login.feature"
+    "uri": "features/Add_account.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@addAccount"
+      }
+    ]
   }
 ]
