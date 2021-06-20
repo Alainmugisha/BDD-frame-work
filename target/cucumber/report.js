@@ -28,7 +28,7 @@ formatter.match({
   "location": "New_account_steps.user_will_open_browser()"
 });
 formatter.result({
-  "duration": 4964543600,
+  "duration": 4236763600,
   "status": "passed"
 });
 formatter.scenario({
@@ -129,7 +129,7 @@ formatter.match({
   "location": "New_account_steps.user_enter_username_as(String)"
 });
 formatter.result({
-  "duration": 240050800,
+  "duration": 151264500,
   "status": "passed"
 });
 formatter.match({
@@ -142,35 +142,35 @@ formatter.match({
   "location": "New_account_steps.user_enter_password_as(String)"
 });
 formatter.result({
-  "duration": 117184900,
+  "duration": 129223400,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.users_click_signin_button()"
 });
 formatter.result({
-  "duration": 1761836400,
+  "duration": 1903245900,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.user_will_lands_on_dashboard_page()"
 });
 formatter.result({
-  "duration": 11804900,
+  "duration": 18398200,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.user_will_be_able_to_click_on_bank_and_cash_button()"
 });
 formatter.result({
-  "duration": 97575100,
+  "duration": 106565300,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.user_will_be_able_to_click_on_add_account_button()"
 });
 formatter.result({
-  "duration": 1586587800,
+  "duration": 1082892600,
   "status": "passed"
 });
 formatter.match({
@@ -183,7 +183,7 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_account_title_as(String)"
 });
 formatter.result({
-  "duration": 139246600,
+  "duration": 134914200,
   "status": "passed"
 });
 formatter.match({
@@ -196,7 +196,7 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_description_as(String)"
 });
 formatter.result({
-  "duration": 158155800,
+  "duration": 157663100,
   "status": "passed"
 });
 formatter.match({
@@ -209,7 +209,7 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_initial_balance_as(String)"
 });
 formatter.result({
-  "duration": 126101500,
+  "duration": 118848700,
   "status": "passed"
 });
 formatter.match({
@@ -222,7 +222,7 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_account_number_as(String)"
 });
 formatter.result({
-  "duration": 131346200,
+  "duration": 144619900,
   "status": "passed"
 });
 formatter.match({
@@ -235,7 +235,7 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_contact_person_as(String)"
 });
 formatter.result({
-  "duration": 146233100,
+  "duration": 133405900,
   "status": "passed"
 });
 formatter.match({
@@ -248,7 +248,7 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_phone_as(String)"
 });
 formatter.result({
-  "duration": 125124700,
+  "duration": 130451700,
   "status": "passed"
 });
 formatter.match({
@@ -261,28 +261,28 @@ formatter.match({
   "location": "New_account_steps.user_will_enter_internet_banking_as(String)"
 });
 formatter.result({
-  "duration": 147012400,
+  "duration": 155222300,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.user_will_click_on_submit_button()"
 });
 formatter.result({
-  "duration": 1065415600,
+  "duration": 1015924400,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.takescreenshotatendoftest_WebDriver_driver()"
 });
 formatter.result({
-  "duration": 2294501900,
+  "duration": 2310433100,
   "status": "passed"
 });
 formatter.match({
   "location": "New_account_steps.user_will_close_the_browser()"
 });
 formatter.result({
-  "duration": 5883139700,
+  "duration": 5829811700,
   "status": "passed"
 });
 });
