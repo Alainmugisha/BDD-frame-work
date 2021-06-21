@@ -26,9 +26,6 @@ public class Login_page_elements {
 	WebElement Dashboard_page;
 	
 	
-	
-
-
 	// Interactive method
 	public void enterUserName(String userName) {
 	User_Name.sendKeys(userName);
@@ -44,9 +41,9 @@ public class Login_page_elements {
 		
 		String actualTitle = driver.getTitle();
 		
-		String expectedTitle =  Dashboard_page.getText();
+	   String expectedTitle =  driver.getTitle();
 		
-		Assert.assertEquals(actualTitle, expectedTitle);
+		Assert.assertEquals(actualTitle, expectedTitle, "CHECK YOUR PAGE SOMETHING IS WRONG");
 		
 	}
 
