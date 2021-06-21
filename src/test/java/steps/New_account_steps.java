@@ -1,7 +1,6 @@
 package steps;
 
 import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -13,7 +12,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import all_pages.Login_page_elements;
 import all_pages.New_account_elements;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

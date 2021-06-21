@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features="classpath:features",
+features="C:\\Users\\Alain Mickey\\Desktop\\All Java project____eclipse\\maven projects\\BDD\\src\\test\\java\\features\\Add_account.feature",
 glue="",
 tags ="@addAccount",
 monochrome=true,

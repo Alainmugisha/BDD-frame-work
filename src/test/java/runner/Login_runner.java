@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features="classpath:features",
+features="C:\\Users\\Alain Mickey\\Desktop\\All Java project____eclipse\\maven projects\\BDD\\src\\test\\java\\features\\TF_login.feature",
 glue="",
-tags ="@loginPage,@addAccount",
+tags ="@loginPage",
 monochrome=true,
 dryRun=false,
 plugin= {
