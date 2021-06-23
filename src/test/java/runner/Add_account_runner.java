@@ -8,9 +8,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features="C:\\Users\\Alain Mickey\\Desktop\\All Java project____eclipse\\maven projects\\BDD\\src\\test\\java\\features\\Add_account.feature",
+features="C:\\Users\\Alain Mickey\\Desktop\\New eclipse 2021-06\\BDD_scenario_outline\\src\\test\\java\\features\\Add_account_scenario_outline.feature",
 glue="",
-tags ="@addAccount",
+tags ="@outline",
 monochrome=true,
 dryRun=false,
 plugin= {

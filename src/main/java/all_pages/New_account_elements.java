@@ -1,5 +1,12 @@
 package all_pages;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,9 +24,9 @@ public class New_account_elements {
 	@FindBy(how = How.XPATH, using = "//*[@id=\"page-wrapper\"]/div[2]/div/h2")
 	WebElement ACCOUNTS; // FOR ASSERTION
 
-	@FindBy(how = How.XPATH, using = "//*[@id=\"side-menu\"]/li[10]/a")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"side-menu\"]/li[10]") //*[@id="side-menu"]/li[10]/a   
 	WebElement BANK_CASH_FIELD;
-	@FindBy(how = How.XPATH, using = "//*[@id=\"side-menu\"]/li[10]/ul/li[1]/a")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"side-menu\"]/li[10]/ul/li[1]/a") //*[@id="side-menu"]/li[10]/ul/li[1]/a
 	WebElement NEW_ACCOUNT;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"account\"]")
 	WebElement ACCOUNT_TITLE_FIELD;
@@ -94,6 +101,22 @@ public class New_account_elements {
 	public void click_submit_button() {
 		SUBMIT_BUTTON.click();
 
+	}
+	
+	public void takescreenshoot() throws Throwable {
+		
+		Thread.sleep(2000);
+		
+		TakesScreenshot ts = ((TakesScreenshot) driver);
+		SimpleDateFormat formatter = new SimpleDateFormat("MMddyy_HHmmss");
+		Date date = new Date();
+		String label = formatter.format(date);
+		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+
+		String currentDir = System.getProperty("user.dir");
+		FileUtils.copyFile(sourceFile, new File(currentDir + "/screenshots/" + label +
+		".png"));
+		
 	}
 
 	

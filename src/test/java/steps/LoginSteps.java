@@ -45,7 +45,8 @@ public class LoginSteps {
 	public void user_will_land_on_dashboard_page() {
 		
 		
-		login.Verify_dashboard();
+	//	login.Verify_dashboard();
+	
 
 	}
 	
