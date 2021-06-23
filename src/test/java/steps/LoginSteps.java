@@ -26,19 +26,15 @@ public class LoginSteps {
 		driver.get("http://www.techfios.com/billing/?ng=admin/");
 	}
 
-
-	@When("^user enters username as \"([^\"]*)\"$")
-	public void user_enters_username_as(String Username) {
+	@When("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_username_and_password(String Username,String Password) {
+		
 		login = PageFactory.initElements(driver, Login_page_elements.class);
 		login.enterUserName(Username);
-	}
-
-	@When("^user enters password as \"([^\"]*)\"$")
-	public void user_enters_password_as(String Password) {
 		login.enterPassword(Password);
-
+		
 	}
-
+	
 	@And("^user click signin button$")
 	public void user_click_signin_button() {
 		login.clickOnSignInButton();
@@ -47,10 +43,20 @@ public class LoginSteps {
 
 	@Then("^user will land on dashboard page$")
 	public void user_will_land_on_dashboard_page() {
-		// login.Verify_dashboard();
+		
+		
+	//	login.Verify_dashboard();
+	
 
 	}
 	
-	
+	@Then("^browser will closed automatically$")
+	public void browser_will_closed_automatically() throws Throwable {
+		
+		
+		
+		BrowserFactory.tearDown();
+		
+	}
 
 }
